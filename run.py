@@ -90,8 +90,7 @@ def main():
     print("\nWhat would you like to do?")
     print("1. Start web interface (Streamlit)")
     print("2. Start CLI interactive mode")
-    print("3. Run example usage")
-    print("4. Exit")
+    print("3. Exit")
     
     choice = input("\nEnter your choice (1-4): ").strip()
     
@@ -102,9 +101,6 @@ def main():
         print("\n💻 Starting CLI interactive mode...")
         subprocess.run([sys.executable, "cli.py", "--interactive"])
     elif choice == "3":
-        print("\n📚 Running example usage...")
-        subprocess.run([sys.executable, "example_usage.py"])
-    elif choice == "4":
         print("Goodbye!")
     else:
         print("Invalid choice. Please run the script again.")
